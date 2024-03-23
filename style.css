@@ -1,0 +1,56 @@
+body {
+    background-color: #ffcadc;
+    margin: 0;
+}
+
+.pageHeader div {
+    background-color: #FE6298;
+    text-align: center;
+    font-size: 500%;
+    font-family: Helvetica;
+}
+
+.pageHeader {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+p, h1, h2, h3, ul, ol {
+    font-family: Helvetica;
+    margin: 20px;
+}
+
+p , ul, ol {
+    font-size: 20px;
+}
+
+.navBar a {
+    text-decoration: none;
+    text-align: center;
+    font-family: Helvetica;
+}
+
+.navBar div {
+    width: 33.33333333%;
+    float: left;
+}
+
+.navBar {
+    width: 100%;
+    overflow: hidden;
+}
+
+.navBar h2 {
+    color: #ffffff;
+}
+
+.image {
+    display: block;
+    margin-left:20px;
+    width: 50%;
+}
+
+.header {
+    position: sticky;
+    top:0;
+}
