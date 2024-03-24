@@ -4,7 +4,7 @@ body {
 }
 
 .pageHeader div {
-    background-color: #FE6298;
+    background-color: #FE6298B2;
     text-align: center;
     font-size: 500%;
     font-family: Helvetica;
@@ -53,4 +53,5 @@ p , ul, ol {
 .header {
     position: sticky;
     top:0;
+    backdrop-filter: blur(10px);
 }
