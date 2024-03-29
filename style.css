@@ -7,7 +7,7 @@ body {
     background-color: #FE6298B2;
     text-align: center;
     font-size: 500%;
-    font-family: Helvetica;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
 }
 
 .pageHeader {
@@ -16,7 +16,7 @@ body {
 }
 
 p, h1, h2, h3, ul, ol {
-    font-family: Helvetica;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
     margin: 20px;
 }
 
@@ -27,7 +27,7 @@ p , ul, ol {
 .navBar a {
     text-decoration: none;
     text-align: center;
-    font-family: Helvetica;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
 }
 
 .navBar div {
