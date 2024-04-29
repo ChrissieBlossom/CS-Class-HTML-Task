@@ -35,29 +35,50 @@ body {
 
 nav {
     flex-basis: calc(100% / 4);
-    overflow: scroll;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    height:100%;
-    position:absolute;
+    height: 100%;
+    background-color: rgb(247, 203, 202);
 }
 
-nav::-webkit-scrollbar {
-    display: none;
+nav div {
+    padding: 7px;
+    text-align: center;
+    background-color: rgb(247, 203, 202);
 }
 
-footer {
+nav div:hover {
+    transition: background-color 0.2s;
+    background-color: rgb(228 164 162);
+}
+
+article {
+    margin: 15px;
+    
+}
+
+article * {
+    padding-block-end: 15px;
     
 }
 
 @media screen and (max-width: 767px) {
     nav {
-        flex-basis: calc(100% / 3);
+        flex-basis: calc(100% / 5);
+        overflow: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        
+    }
+
+    nav div {
+        padding:15px;
+    }
+
+    #content {
+        flex-direction: column;
+    }
+
+    nav::-webkit-scrollbar {
+        display: none;
     }
 }
 
-@media screen and (max-width: 500px) {
-    #content {
-        flex-direction:column;
-    }
-}
