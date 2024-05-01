@@ -1,0 +1,67 @@
+# Artificial Intelligence
+
+[img](images/ai.jpg)
+
+[list]
+* [What is AI](#what-is-ai)
+* [Categories of AI](#categories)
+* [Problems with AI](#problems)
+* [Bias](#bias)
+[end]
+
+[jump what-is-ai]
+## What is AI?
+
+Artifical Intelligence (AI) is a computer system that is designed to do tasks that would normally require human intelligence, for instance, creating images, writing text, etc.
+
+AI is regularly used for problem solving, pattern recognition and logical reasoning, for instance, in AIs made to play board games. An example of an AI is OpenAI's [ChatGPT](https://chat.openai.com), a large language model that can generate text in a conversational manner.
+
+[jump categories]
+## Categories of AI
+
+There are three categories of AI. In ascending order of "intelligence":
+
+[list]
+[ordered]
+* Artificial Narrow Intelligence
+* Artificial General Intelligence
+* Artificial Super Intelligence
+[end]
+
+### Artificial Narrow Intelligence
+Artificial Narrow Intelligence is designed for a specific purpose. There are many, *many* examples. Just a few include driverless cars, chatbots, language translation, deepfakes, and weather prediction. This is the only type of AI that currently exists (to public knowledge)
+
+[img](image/deepmind.jpg)
+
+### Artificial General Intelligence
+Artificial General Intelligence is not designed for a specific task. It is able to complete a variety of tasks, and is comparable to a human in its inteligence.
+
+### Artificial Super Intelligence
+This is an AI whose intelligence well surpases that of any human. This could be problematic as it could get to the point where we can't understand what the AI is doing.
+
+[jump problems]
+## Problems with AI
+
+AI can do a lot of great things, but it also comes with downsides. It can very easily be used to create disinformation and spread misinformation, create fake pictures intended to decieve, quickly make hundreds of fake reviews for a product, and more. On top of that, it will also replace jobs, leaving people without work. AI could also cause harm to people if not regulated.
+
+Isaac Asimov created 3 laws that robots should have to follow to not let this happen.
+
+[list]
+[ordered]
+* a robot may not injure a human being or, through inaction, allow a human being to come to harm
+* a robot must obey the orders given it by human beings except where such orders would conflict with the First Law
+* a robot must protect its own existence as long as such protection does not conflict with the First or Second Law.
+[end]
+
+Sometimes, AI explicitly ignores one or more of these laws, for example, in autonomous weaponry, it is specifically *designed* to cause harm to people. There are also situations where an AI system may have to harm someone, such as a self-driving vehicle having to choose between the driver or a pedestrian being harmed.
+
+A 4th law was later created, superceeding the others, stating "a robot may not harm humanity, or, by inaction, allow humanity to come to harm"
+
+[jump bias]
+## Bias
+
+### What is bias?
+Bias in AI is where an AI outputs biased results, due to its training. This could be caused by a poor dataset that over-represents certain categories (implicit bias), or by the programmers intentionally creating it to output biased answers (explicit bias). An example of where bias has occured in AI is in candidate screening for jobs at Amazon, where it favoured males over females. It can also lead to racial profiling, or other forms of prejudice.
+
+### How can it be mitigated?
+Bias can be mitigated introducing legislation that limits it. An example is by increasing the transparency of AI systems and the training data sets. This allows people to see how they work, and determine if the output could be biased by something. This however is unlikely to happen, as AI companies wouldn't want how their AI works to be public knowledge for their competitors. It could also be affected by geopolictical tensions, as a country may not want to give information that another country could use to furhter their AI development.

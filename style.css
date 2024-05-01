@@ -1,58 +1,92 @@
-body {
-    background-color: #ffcadc;
-    margin: 0;
-}
-
-.pageHeader div {
-    background-color: #FE6298B2;
-    text-align: center;
-    font-size: 500%;
+* {
     font-family: Montserrat, Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin:0;
 }
 
-.pageHeader {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-p, h1, h2, h3, ul, ol {
-    font-family: Montserrat, Arial, Helvetica, sans-serif;
-    margin: 20px;
-}
-
-p , ul, ol {
-    font-size: 20px;
-}
-
-.navBar a {
-    text-decoration: none;
-    text-align: center;
-    font-family: Montserrat, Arial, Helvetica, sans-serif;
-}
-
-.navBar div {
-    width: 33.33333333%;
-    float: left;
-}
-
-.navBar {
-    width: 100%;
-    overflow: hidden;
-}
-
-.navBar h2 {
-    color: #ffffff;
-}
-
-.image {
-    display: block;
-    margin-left:20px;
-    width: 50%;
-}
-
-.header {
+header {
+    background-color: rgb(255, 170, 128);
     position: sticky;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: min(5vw, 200%);
+    padding: 15px;
     top:0;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
 }
+
+#content {
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:row;
+}
+
+body {
+    position: absolute;
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height:100%;
+    overflow:scroll;
+    
+}
+
+nav {
+    flex-basis: calc(100% / 4);
+    height: 100%;
+    background-color: rgb(247, 203, 202);
+    
+}
+
+nav div {
+    padding: 7px;
+    text-align: center;
+    background-color: rgb(247, 203, 202);
+}
+
+nav div:hover {
+    transition: background-color 0.2s;
+    background-color: rgb(228 164 162);
+}
+
+article {
+    margin: 15px;
+    flex-basis: calc(100% / 4 * 3);
+}
+
+article * {
+    
+    
+}
+
+.hidden {
+    display: none;
+}
+
+img {
+    width:100%;
+}
+
+@media screen and (max-width: 767px) {
+    nav {
+        flex-basis: calc(100% / 4.5);
+        overflow: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        
+    }
+
+    nav div {
+        padding:15px;
+    }
+
+    #content {
+        flex-direction: column;
+    }
+
+    nav::-webkit-scrollbar {
+        display: none;
+    }
+}
+
