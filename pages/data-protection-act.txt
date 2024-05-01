@@ -1,0 +1,41 @@
+# The Data Protection Act and GDPR
+
+There are 3 main components of the Data Protection Act:
+
+[list]
+[unordered]
+* [Collection of data](#collection)
+* [Processing of data](#processing)
+* [Storage of data](#storage)
+[end]
+
+[jump collection]
+## Collection of data
+
+All data collected must be relevant, up to date, and there must be a legitimate reason for the data.
+
+There are two categories of data: **Personal** and **Sensitive**
+
+Personal data is things like address and name.
+
+Sensitive data is things like sexual orientation, religion, and mental health. Sensitive data being stored needs to be authorised.
+
+What constitutes as personal vs sensitive data changes depending on the organisation
+
+[jump collection]
+## Collection of Data
+
+All data processing needs to be done lawfully and transparently - the user needs to be able to know what information is being kept on them. It also has to be fair on both the data controller (e.g. a college) AND on the data subject (e.g. a student at the college)
+
+[jump storage]
+## Storage of Data
+
+Data that's being stored must be able to be accessed. It also needs to be stored in a timely fashion - data should not be kept for longer than is needed. It must also be stored safel and securely, and musnt be shared with 3rd parties. It must be up to date, relevant, and accurate.
+
+## Consequences
+
+If any of these are broken or not complied with, it goes to the ICO (information commissioner's office). If you're storing personal data, no matter how small the organisation, you have to pay the ICO. They also have to report to the government. They have the power to bring charges, carry out audits, and deal with any breaches in an appropriate way.
+
+## GDPR
+
+GDPR (or the General Data Protection Regulation) is an extension to the Data Protection Act. It gives more rights to data subjects on how and what data of theirs is stored. It also makes it so you must have permission to store data about children.
