@@ -2,7 +2,6 @@
 
 There are 3 main components of the Data Protection Act:
 
-[list]
 [unordered]
 * [Collection of data](#collection)
 * [Processing of data](#processing)
