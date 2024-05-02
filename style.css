@@ -14,6 +14,10 @@ header {
     top:0;
 }
 
+article h1 {
+    font-size:45px;
+}
+
 #content {
     width:100%;
     height:100%;
@@ -27,20 +31,32 @@ body {
     display: flex;
     flex-direction: column;
     width:100%;
-    height:100%;
+    height:fit-content;
     overflow:scroll;
     
 }
 
 nav {
+    position: fixed;
+    background-color: rgb(247, 203, 202);
+    overflow: scroll;
+    width: 25%;
+    height: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+nav::-webkit-scrollbar {
+    display: none;
+}
+
+#flexboxforformatting {
     flex-basis: calc(100% / 4);
     height: 100%;
-    background-color: rgb(247, 203, 202);
-    
 }
 
 nav div {
-    padding: 7px;
+    padding: 15px;
     text-align: center;
     background-color: rgb(247, 203, 202);
 }
@@ -53,6 +69,7 @@ nav div:hover {
 article {
     margin: 15px;
     flex-basis: calc(100% / 4 * 3);
+    padding:20px;
 }
 
 article * {
@@ -70,11 +87,16 @@ img {
 
 @media screen and (max-width: 767px) {
     nav {
-        flex-basis: calc(100% / 4.5);
+        max-height: 20vh;
+        width:100%;
         overflow: scroll;
         -ms-overflow-style: none;
         scrollbar-width: none;
-        
+        position:initial;
+    }
+
+    #flexboxforformatting {
+
     }
 
     nav div {
@@ -82,7 +104,7 @@ img {
     }
 
     #content {
-        flex-direction: column;
+        display:initial;
     }
 
     nav::-webkit-scrollbar {
