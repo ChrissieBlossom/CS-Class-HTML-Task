@@ -1,4 +1,3 @@
-
 let filenamesIframe = document.getElementById("doc_names");
 let navbar = document.getElementById("navbar");
 let body = document.getElementById("bodytext");
@@ -40,8 +39,7 @@ filenamesIframe.onload = function () {
 
 
 function displayFile(filename) {
-
-    let individualFileIframe = document.createElement("iframe");
+    individualFileIframe = document.createElement("iframe");
     individualFileIframe.setAttribute("class", "hidden");
     individualFileIframe.setAttribute("src", filename );
     navbar.appendChild(individualFileIframe);
@@ -49,7 +47,7 @@ function displayFile(filename) {
     individualFileIframe.onload = function () {
         let currentFileContentRaw = individualFileIframe.contentWindow.document.body.innerText;
         body.innerHTML = markdownParser(currentFileContentRaw);
-        console.log("success");
+        individualFileIframe.remove();
     }
 }
 

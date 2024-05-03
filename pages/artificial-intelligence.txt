@@ -30,7 +30,7 @@ There are three categories of AI. In ascending order of "intelligence":
 ### Artificial Narrow Intelligence
 Artificial Narrow Intelligence is designed for a specific purpose. There are many, *many* examples. Just a few include driverless cars, chatbots, language translation, deepfakes, and weather prediction. This is the only type of AI that currently exists (to public knowledge)
 
-[img](image/deepmind.jpg)
+[img](images/deepmind.jpg)
 
 ### Artificial General Intelligence
 Artificial General Intelligence is not designed for a specific task. It is able to complete a variety of tasks, and is comparable to a human in its inteligence.
