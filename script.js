@@ -123,6 +123,14 @@ function markdownParser(text) {
         
     }
 
+    for (var k = 0; k < outArr.length; k++) {
+
+        if (outArr[k] == "<p></p>") {
+            outArr[k] = "";
+        }
+        
+    }
+
     output = "";
 
     for (var l = 0; l < outArr.length; l++) {

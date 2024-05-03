@@ -5,13 +5,17 @@
 }
 
 header {
-    background-color: rgb(255, 170, 128);
+    
     position: sticky;
     text-align: center;
     color: rgb(255, 255, 255);
     font-size: min(5vw, 200%);
     padding: 15px;
-    top:0;
+    top: 0;
+    background: hsla(11, 82%, 87%, 1);
+    background: linear-gradient(135deg, hsla(11, 82%, 87%, 1) 0%, hsla(299, 85%, 90%, 1) 100%);
+    background: -moz-linear-gradient(135deg, hsla(11, 82%, 87%, 1) 0%, hsla(299, 85%, 90%, 1) 100%);
+    background: -webkit-linear-gradient(135deg, hsla(11, 82%, 87%, 1) 0%, hsla(299, 85%, 90%, 1) 100%);
 }
 
 article h1 {
@@ -38,7 +42,7 @@ body {
 
 nav {
     position: fixed;
-    background-color: rgb(247, 203, 202);
+    background-color: rgb(238, 230, 238);
     overflow: scroll;
     width: 25%;
     height: 100%;
@@ -58,13 +62,14 @@ nav::-webkit-scrollbar {
 nav div {
     padding: 15px;
     text-align: center;
-    background-color: rgb(247, 203, 202);
+    background-color: rgb(238, 230, 238);
 }
 
-nav div:hover {
-    transition: background-color 0.2s;
-    background-color: rgb(228 164 162);
-}
+    nav div:hover {
+        transition: background-color 0.2s;
+        transition: background-color 0.2s;
+        background-color: rgb(207, 178, 209);
+    }
 
 article {
     margin: 15px;
@@ -82,7 +87,8 @@ article * {
 }
 
 img {
-    width:100%;
+    width: 100%;
+    box-shadow: 10px 10px rgb(207, 178, 209);
 }
 
 @media screen and (max-width: 767px) {
