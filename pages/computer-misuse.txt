@@ -1,1 +1,31 @@
-# Computer Misuse Act
+# Computer Misuse Act 1990
+
+[img](images/hacker-man.jpg)
+
+The Computer Misuse Act, passed in 1990 is the law that criminalises unauthorised access to computer systems and data, and the destroying or damaging of these.
+
+The law was brought into place after hackers broke into the email system of a member of the royal family, via BT. They were initially charges with fraud, but this decision was appealed, and the perpetrators got away with it. The law was created to prevent this happening again.
+
+There are three levels that the law deals with:
+[unordered]
+* [Preventing unauthorised access](#access)
+* [Committing a further offence](#offence)
+* [Changing data](#data)
+[end]
+
+[jump access]
+## Preventing unauthorised access
+
+This is the first level of the law, and just covers accessing a computer system. Even if nothing was done with this access, if it was unauthorised and **intentional**, then it is a violation of the act.
+
+[jump offence]
+## Committing a further offence
+
+This means that if you access a computer system and use what you find to commit other crimes. An example of this would be if you used information to blackmail a person, or to find sensitive information.
+
+[jump data]
+## Changing data
+
+This means that changing data in a computer system you are not authorised to use is also against the law. An example could be a student finding a teacher’s password and using it to access their computer and change their grade.
+
+The act only applies to intentional access. Quite often, cases don’t go to court, as it shows that they have poor cybersecurity.

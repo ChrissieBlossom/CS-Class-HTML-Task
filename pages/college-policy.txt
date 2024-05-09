@@ -1,0 +1,26 @@
+# College Cybersecurity Policy
+
+[img](images/security.jpg)
+
+At college, there will be a cybersecurity policy that dictates what can be done by students and staff on college computer systems.
+
+[unordered]
+* [Rules in relation to data protection](#dpa)
+* [Rules in relation to authorised and unauthorised access](#cma)
+[end]
+
+[jump dpa]
+## Rules in relation to data protection
+
+The college stores many pieces of information on students, staff, visitors, etc. 
+
+This information must be stored only for as long as relevant. For instance, student photos would not be kept for long after a student has left.
+
+The college must also be transparent about the data being collected, and the data being held would differ for students, staff and visitors. For instance, the college would hold less information about visitors, but would hold information about their visit.
+
+This data must also only be able to be accessed by people who are authorised to, like teachers and administration.
+
+[jump cma]
+## Rules in relation to authorised and unauthorised access
+
+The college would also have rules in place to dictate how people can use and access college systems. It would prevent people from being able to install unauthorised software, use college systems from unauthorised locations, and more. It would also dictate what sort of internet content can be accessed on the college network. This policy would allow the college to take action against people who break these rules.
