@@ -50,6 +50,11 @@ nav {
     scrollbar-width: none;
 }
 
+#notice {
+    padding: 7px !important;
+    text-align: center;
+}
+
 nav::-webkit-scrollbar {
     display: none;
 }
@@ -107,9 +112,7 @@ img {
         display:none;
     }
 
-    nav div {
-        padding:15px;
-    }
+    
 
     #content {
         display:initial;
