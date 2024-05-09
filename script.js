@@ -1,8 +1,11 @@
 // I am aware this might be a bit messy, but it's my first time using JavaScript
 
+let fullbody = document.body;
+let header = document.getElementById("Header");
 let filenamesIframe = document.getElementById("doc_names");
 let navbar = document.getElementById("navbar");
 let body = document.getElementById("bodytext");
+let toggleicon = document.getElementById("toggle");
 
 
 // When the list of filnames is loaded, it creates another iframe that contains the file contents, and creates menu divs for each one with an onclick event to run displayFile()
@@ -53,6 +56,13 @@ function displayFile(filename) {
         body.innerHTML = docParser(currentFileContentRaw);
         individualFileIframe.remove();
     }
+}
+
+function darkMode() {
+    header.classList.toggle("dark-mode");
+    fullbody.classList.toggle("dark-mode");
+    navbar.classList.toggle("dark-mode");
+    toggleicon.classList.toggle("dark-mode");
 }
 
 function docParser(text) {

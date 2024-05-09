@@ -18,6 +18,22 @@ header {
     background: -webkit-linear-gradient(135deg, hsla(11, 82%, 87%, 1) 0%, hsla(299, 85%, 90%, 1) 100%);
 }
 
+    header .dark-mode {
+        background: #4A064A;
+        background: linear-gradient(135deg, #4A064A 0%, #521609 100%);
+        background: -moz-linear-gradient(135deg, #4A064A 0%, #521609 100%);
+        background: -webkit-linear-gradient(135deg, #4A064A 0%, #521609 100%);
+    }
+
+#toggle {
+    box-shadow:none;
+    width:30px;
+    height:30px;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+}
+
 article h1 {
     font-size:45px;
 }
