@@ -1,0 +1,21 @@
+# Copyright Designs and Patents Act
+
+[img](images/law.jpg)
+
+The copyright designs and patents act protects the intellectual property of an individual or company, and makes it illegal to distribute without permission.
+
+Original work is automatically covered by copyright, and lasts for the life of the creator, plus 70 years.
+
+There are many things prohibited by the act, including:
+[unordered]
+* Copying an original work
+* Issuing the copy of the original work to the public
+* Renting/lending the copy of the original work to the public
+* Performing, showing or playing the original work in public
+* Making an adaptation of the original work
+* Importing a copy of original work
+* Possessing or dealing with a copy of the original work
+* Providing means to make copies of the original work
+* Permitting the use of premises for making copies of the original work
+* Provision of props/equipment for a performance of a copy of the original work
+[end]

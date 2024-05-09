@@ -1,2 +1,28 @@
 # RIPA 2000
 ## The Regulation of Investigatory Powers Act 2000
+This law regulates how organisations can monitor communications, and covers **investigation, surveillance,** and **interception** of communication, such as "wiretapping" messages (provided a warrant has been issued)
+
+The act enfoces ISPs to give up infromation on request from an authorised authority, such as GCHQ
+
+## What the act allows
+
+The following actions are allowed under the act for police and other public bodies:
+[unordered]
+* Demand ISPs to provide access to a customer's communications, and fir equipent that allows for it, without informing the customer
+* Allow mass surveillance of communications
+* Monitor an individual's internet activities
+* Prevent the existence of such interception being revealed in court
+* Demand that someone hand over the keys for encryption
+[end]
+
+## Monitoring
+
+Monitoring can only be done by certain organisations, like the plice, and intelligence agecies. To do this, a warrant must be issued, though some organisations, like GCHQ and the secret services, don't need one.
+
+These organisations are able to carry out mass surveillance and can do audits on previously held data. 
+
+Some other agencies like the Environmental Protection Agency can also do this, but they require a court order.
+
+## Problems
+
+This surveilance can feel like a violation of civil liberties, and can contradict other laws like the freedom of information act. It could also lead to false positives - organisations finding communications that appear to be problematic but are in fact benign. It can also be misused, for instance it has previously been used by a local council to see if a family lives inside of the catchment area for a school.

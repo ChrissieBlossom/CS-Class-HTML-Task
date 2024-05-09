@@ -5,17 +5,14 @@
 	<link href="images/favicon.ico" rel="icon" type="image/x-icon">
 	<link rel="stylesheet" href="style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-
-
 </head>	
 
 <body>
 
+	<!-- Creates iframe that holds the filenames of the documents so that they can be read with the javascript -->
 	<iframe id="doc_names" class="hidden" src="filenames.txt"></iframe>
 
 	<header><h1>College HTML</h1></header>
@@ -23,13 +20,15 @@
 
 	<div>
 		<nav id="navbar">
+			<p id="notice"><strong>Scroll to see more!</strong></p>
 		</nav>
-
 		<section id="content">
 
+			<!-- Honestly theres a chance that using flex was unncessecary, but i needed to do this to make my life WAYYY easier -->
 			<div id="flexboxforformatting"></div>
 
 			<article id="bodytext">
+				<a href="https://github.com/ChrissieBlossom/CS-Class-HTML-Task/tree/master">Source code for page on GitHub</a>
 			</article>
 
 

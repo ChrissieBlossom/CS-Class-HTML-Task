@@ -1,3 +1,6 @@
 artificial-intelligence
 data-protection-act
 ripa-2000
+copyright
+computer-misuse
+college-policy

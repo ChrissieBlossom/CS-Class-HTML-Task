@@ -36,7 +36,7 @@ body {
     flex-direction: column;
     width:100%;
     height:fit-content;
-    overflow:scroll;
+    overflow-y:scroll;
     
 }
 
@@ -44,10 +44,15 @@ nav {
     position: fixed;
     background-color: rgb(238, 230, 238);
     overflow: scroll;
-    width: 25%;
+    width: 400px;
     height: 100%;
     -ms-overflow-style: none;
     scrollbar-width: none;
+}
+
+#notice {
+    padding: 7px !important;
+    text-align: center;
 }
 
 nav::-webkit-scrollbar {
@@ -55,7 +60,9 @@ nav::-webkit-scrollbar {
 }
 
 #flexboxforformatting {
-    flex-basis: calc(100% / 4);
+    flex-basis: 400px;
+    flex-grow: 0;
+    flex-shrink: 0;
     height: 100%;
 }
 
@@ -65,11 +72,11 @@ nav div {
     background-color: rgb(238, 230, 238);
 }
 
-    nav div:hover {
-        transition: background-color 0.2s;
-        transition: background-color 0.2s;
-        background-color: rgb(207, 178, 209);
-    }
+nav div:hover {
+    transition: background-color 0.2s;
+    transition: background-color 0.2s;
+    background-color: rgb(207, 178, 209);
+}
 
 article {
     margin: 15px;
@@ -91,7 +98,7 @@ img {
     box-shadow: 10px 10px rgb(207, 178, 209);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 850px) {
     nav {
         max-height: 20vh;
         width:100%;
@@ -105,9 +112,7 @@ img {
         display:none;
     }
 
-    nav div {
-        padding:15px;
-    }
+    
 
     #content {
         display:initial;
