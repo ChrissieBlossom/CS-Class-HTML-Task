@@ -1,13 +1,17 @@
+// I am aware this might be a bit messy, but it's my first time using JavaScript
+
 let filenamesIframe = document.getElementById("doc_names");
 let navbar = document.getElementById("navbar");
 let body = document.getElementById("bodytext");
 
+
+// When the list of filnames is loaded, it creates another iframe that contains the file contents, and creates menu divs for each one with an onclick event to run displayFile()
+// It also grabs the first line (which is always the article title) for the menu items
+
 filenamesIframe.onload = function () {
     let filenamesRawStr = filenamesIframe.contentWindow.document.body.innerText;
-    console.log(filenamesRawStr);
 
     let filenamesArray = filenamesRawStr.split("\n");
-    console.log(filenamesArray);
 
     for (var i = 0; i < filenamesArray.length; i++) {
 
@@ -24,8 +28,6 @@ filenamesIframe.onload = function () {
             let navbarItemDiv = document.createElement("div");
             navbarItemDiv.setAttribute("onclick", "displayFile('" + filename + "')");
 
-            console.log(currentFileContentArray[0]);
-
             let navbarItemLabel = document.createTextNode((currentFileContentArray[0]).slice(1));
             navbarItemDiv.appendChild(navbarItemLabel);
             navbar.appendChild(navbarItemDiv);
@@ -38,6 +40,8 @@ filenamesIframe.onload = function () {
 }
 
 
+// Loads the html created in the document parser into the main bit of the site
+
 function displayFile(filename) {
     individualFileIframe = document.createElement("iframe");
     individualFileIframe.setAttribute("class", "hidden");
@@ -46,17 +50,17 @@ function displayFile(filename) {
 
     individualFileIframe.onload = function () {
         let currentFileContentRaw = individualFileIframe.contentWindow.document.body.innerText;
-        body.innerHTML = markdownParser(currentFileContentRaw);
+        body.innerHTML = docParser(currentFileContentRaw);
         individualFileIframe.remove();
     }
 }
 
-function markdownParser(text) {
+function docParser(text) {
     
 
     
     let output = text
-    // this handles most things
+    // this handles headings, links (including images), bold, and italics
 
         .replace(/^###### (.*$)/gm, '<h6 placeholder="placeholder">$1</h6>')
         .replace(/^##### (.*$)/gm, '<h5 placeholder="placeholder">$1</h5>')
@@ -73,6 +77,7 @@ function markdownParser(text) {
     let isList = false;
     let isOrdered = false;
 
+    // jumping
     for (var k = 0; k < outArr.length; k++) {
         if (outArr[k].substr(0, 5) == "[jump") {
             outArr[k + 1] = outArr[k + 1].replace('placeholder="placeholder"', 'id="' + outArr[k].slice(6, -1) + '"');
@@ -80,6 +85,7 @@ function markdownParser(text) {
         }
     }
 
+    // lists
     for (var k = 0; k < outArr.length; k++) {
 
         if (outArr[k].substr(0, 9) == "[ordered]") {
@@ -113,6 +119,7 @@ function markdownParser(text) {
 
     }
 
+    // paragraphs
     for (var k = 0; k < outArr.length; k++) {
 
         if (outArr[k][0] == "<") {
@@ -123,6 +130,7 @@ function markdownParser(text) {
         
     }
 
+    // removes blank paragraphs
     for (var k = 0; k < outArr.length; k++) {
 
         if (outArr[k] == "<p></p>") {
@@ -133,10 +141,12 @@ function markdownParser(text) {
 
     output = "";
 
+
+    // recombines into html document
     for (var l = 0; l < outArr.length; l++) {
         output = output + outArr[l] + "\n";
     }
 
-    console.log(output);
+    
     return output;
 }
