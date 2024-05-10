@@ -5,34 +5,35 @@
 }
 
 header {
-    
     position: sticky;
     text-align: center;
     color: rgb(255, 255, 255);
     font-size: min(5vw, 200%);
     padding: 15px;
     top: 0;
-    background: hsla(11, 82%, 87%, 1);
-    background: linear-gradient(135deg, hsla(11, 82%, 87%, 1) 0%, hsla(299, 85%, 90%, 1) 100%);
-    background: -moz-linear-gradient(135deg, hsla(11, 82%, 87%, 1) 0%, hsla(299, 85%, 90%, 1) 100%);
-    background: -webkit-linear-gradient(135deg, hsla(11, 82%, 87%, 1) 0%, hsla(299, 85%, 90%, 1) 100%);
+    background: rgb(250,208,251);
+    background: linear-gradient(135deg, rgba(250,208,251,1) 0%, rgba(249,205,195,1) 100%);
 }
 
-    header .dark-mode {
-        background: #4A064A;
-        background: linear-gradient(135deg, #4A064A 0%, #521609 100%);
-        background: -moz-linear-gradient(135deg, #4A064A 0%, #521609 100%);
-        background: -webkit-linear-gradient(135deg, #4A064A 0%, #521609 100%);
-    }
+.header-dark-mode {
+    background: #4A064A;
+    background: linear-gradient(135deg, rgb(74, 6, 75) 0%, rgb(82, 22, 8) 100%);
+}
 
 #toggle {
-    box-shadow:none;
+    box-shadow:none !important;
     width:30px;
     height:30px;
     position: fixed;
-    top: 15px;
-    left: 15px;
+    bottom: 15px;
+    right: 15px;
 }
+
+.icon-dark-mode {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
 
 article h1 {
     font-size:45px;
@@ -56,6 +57,19 @@ body {
     
 }
 
+.body-dark-mode {
+    background-color: rgb(24, 26, 27);
+    color: #FFFFFF;
+}
+
+.body-dark-mode a {
+    color: rgb(42, 178, 247);
+}
+
+.body-dark-mode img {
+    box-shadow: 10px 10px rgb(76, 47, 78) !important;
+}
+
 nav {
     position: fixed;
     background-color: rgb(238, 230, 238);
@@ -64,6 +78,21 @@ nav {
     height: 100%;
     -ms-overflow-style: none;
     scrollbar-width: none;
+}
+
+.nav-dark-mode {
+    background-color: rgb(45, 31, 45);
+    color: #FFFFFF;
+}
+
+.nav-item-dark-mode {
+    background-color: rgb(45, 31, 45);
+}
+
+.nav-dark-mode div:hover {
+    transition: background-color 0.2s;
+    transition: background-color 0.2s;
+    background-color: rgb(76, 47, 78) !important;
 }
 
 #notice {

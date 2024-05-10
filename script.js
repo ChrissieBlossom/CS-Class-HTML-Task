@@ -1,7 +1,7 @@
 // I am aware this might be a bit messy, but it's my first time using JavaScript
 
 let fullbody = document.body;
-let header = document.getElementById("Header");
+let header = document.getElementById("header");
 let filenamesIframe = document.getElementById("doc_names");
 let navbar = document.getElementById("navbar");
 let body = document.getElementById("bodytext");
@@ -30,6 +30,7 @@ filenamesIframe.onload = function () {
 
             let navbarItemDiv = document.createElement("div");
             navbarItemDiv.setAttribute("onclick", "displayFile('" + filename + "')");
+            navbarItemDiv.setAttribute("class", "nav-bar-div");
 
             let navbarItemLabel = document.createTextNode((currentFileContentArray[0]).slice(1));
             navbarItemDiv.appendChild(navbarItemLabel);
@@ -59,10 +60,17 @@ function displayFile(filename) {
 }
 
 function darkMode() {
-    header.classList.toggle("dark-mode");
-    fullbody.classList.toggle("dark-mode");
-    navbar.classList.toggle("dark-mode");
-    toggleicon.classList.toggle("dark-mode");
+    
+    let navdivs = document.querySelectorAll(".nav-bar-div");
+    navdivs.forEach(el => { el.classList.toggle("nav-item-dark-mode"); });
+
+    
+
+    header.classList.toggle("header-dark-mode");
+    fullbody.classList.toggle("body-dark-mode");
+    navbar.classList.toggle("nav-dark-mode");
+    toggleicon.classList.toggle("icon-dark-mode");
+    console.log("Success");
 }
 
 function docParser(text) {
