@@ -46,6 +46,7 @@ filenamesIframe.onload = function () {
     }
 
     displayFile("pages/home.txt");
+    header.setAttribute("onclick", 'displayFile("pages/home.txt")');
 
     window.onload = () => {
         console.log("Before if");
