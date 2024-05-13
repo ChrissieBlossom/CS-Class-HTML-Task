@@ -27,6 +27,7 @@ header {
     position: fixed;
     bottom: 15px;
     right: 15px;
+    display: none;
 }
 
 .icon-dark-mode {

@@ -8,6 +8,8 @@ let body = document.getElementById("bodytext");
 let toggleicon = document.getElementById("toggle");
 
 
+
+
 // When the list of filnames is loaded, it creates another iframe that contains the file contents, and creates menu divs for each one with an onclick event to run displayFile()
 // It also grabs the first line (which is always the article title) for the menu items
 
@@ -36,11 +38,25 @@ filenamesIframe.onload = function () {
             navbarItemDiv.appendChild(navbarItemLabel);
             navbar.appendChild(navbarItemDiv);
 
+            
 
         }
 
 
     }
+
+    window.onload = () => {
+        console.log("Before if");
+        if (checkCookie() == "dark") {
+            setCookie("light");
+            console.log("Set to dark mode");
+            darkMode();
+        }
+        toggleicon.style.display = "initial";
+    }
+
+    
+
 }
 
 
@@ -59,19 +75,7 @@ function displayFile(filename) {
     }
 }
 
-function darkMode() {
-    
-    let navdivs = document.querySelectorAll(".nav-bar-div");
-    navdivs.forEach(el => { el.classList.toggle("nav-item-dark-mode"); });
 
-    
-
-    header.classList.toggle("header-dark-mode");
-    fullbody.classList.toggle("body-dark-mode");
-    navbar.classList.toggle("nav-dark-mode");
-    toggleicon.classList.toggle("icon-dark-mode");
-    console.log("Success");
-}
 
 function docParser(text) {
     
