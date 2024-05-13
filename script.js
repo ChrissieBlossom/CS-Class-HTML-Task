@@ -45,6 +45,8 @@ filenamesIframe.onload = function () {
 
     }
 
+    displayFile("pages/home.txt");
+
     window.onload = () => {
         console.log("Before if");
         if (checkCookie() == "dark") {
