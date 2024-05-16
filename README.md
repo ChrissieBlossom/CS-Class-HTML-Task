@@ -9,7 +9,7 @@ The rules are as follows:
 ## - Heading 2
 ...etc to heading 6
 
-[list] - starts a list, must be followed with [ordered] or [unordered] on the next line
+[unordered]/[ordered] - starts a an ordered or unorderd list respectively
 
 * - list item, this applies for both unordered AND unordered lists
 
