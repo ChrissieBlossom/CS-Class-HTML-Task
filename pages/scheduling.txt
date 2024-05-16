@@ -1,0 +1,38 @@
+# Scheduling
+Scheduling in a computer is the action of assigning resources in a particular order to perform tasks.
+These resources may be processors, network links, or expansion cards.
+The **scheduler** is an operating system module that selects the next jobs according to a variety of algorithms.
+
+## Algorithms used for process scheduling
+
+There are a number of algorithms used for ordering processes. Some are as follows:
+[unordered]
+* [Shortest time remaining](#str)
+* [Shortest job first](#sjf)
+* [Round robin](#rr)
+* [Multi-level feedback queueing (MLFQ)](#mlfq)
+[end]
+
+[jump str]
+### Shortest time remaining
+
+In the shortest time remaining algorithm, the process with the least remaining time for it to complete gets executed first. A disadvantage of this is that it can delay the execution of longer tasks, if shorter tasks keep arriving, as they are prioritised. This leades to **starvation**, which is when a task is continuously not allocated processor time.
+This process is effective for shorter processes, but it requires estimating the time remaining on a task every time.
+
+[jump sjf]
+### Shortest job first
+
+This is similar to [shortest time remaining](#str) but the difference is that it is based on the total length of the job, not on the time *remaining*. Like shortest time remaining, it is good for short processes, but can lead to starvation if a long process keeps getting supersceded by shorter processes.
+
+[jump rr]
+### Round robin
+
+Round robin works by dividing processor time equaly among all running tasks. This makes it fair as each process is treated the same. Each time period is called a time slice. If a process does not complete within this time sclice it is suspended until it is next allocated processor time.
+An advantage of this is that it is very predictable as every process gets equal time, however it can have a high turnaround and waiting time for *long* processes, and choosing the right time slice size to optimise this can be difficult.
+
+[jump mlfq]
+### Multi-level feedback queueing (MLFQ)
+
+In MLFQ scheduling, there are multiple queues, each with different priorities. If a process uses too much CPU time for a queueu, it can be moved down to a lower priority queue. If it takes even longer, it can be boosted back up to high priority, preventing starvation of that task. Each queue can use different algorithms such as [round robin](#rr) or [shortest time remaining](#str).
+This is the scheduling method used in modern everyday operating systems such as Windows, macOS and Linux. 
+As mentioned, it prevents starvation of tasks, but the downside is that it is much more complicated than the other systems as it has multiple queues so working out the parameters for each is much more complex.
